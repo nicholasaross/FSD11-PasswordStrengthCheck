@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Password Strength Checker</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+	<div class="col-md-4">
+	<div class="card border-primary">
+	<div class="card-header bg-primary text-white">New Password</div>
+	<div class="card-body">
+
+	<div class="mb-3">
+		<label for="password" class="form-label">Password</label>
+		<input id="password" type="password" class="form-control" placeholder="Password">
+	</div>
+	<div class="mb-3">
+		<label for="confirmPassword" class="form-label">Confirm Password</label>
+		<input id="confirmPassword" type="password" class="form-control" placeholder="Confirm Password">
+	</div>
+
+	<div class="progress"><div id="strengthBar" class="progress-bar"></div></div>
+
+	<div class="container mt-3">
+		<p class="bg-secondary text-white text-center py-1 rounded">Rules</p>
+		<ul class="list-group small">
+			<li class="list-group-item align-items-center d-flex">
+				<div class="me-auto">At least 8 characters</div>
+				<span id="lengthRule"></span></li>
+			<li class="list-group-item align-items-center d-flex">
+				<div class="me-auto">At least one uppercase letter</div>
+				<span id="uppercaseRule"></span></li>
+			<li class="list-group-item align-items-center d-flex">
+				<div class="me-auto">At least one lowercase letter</div>
+				<span id="lowercaseRule"></span></li>
+			<li class="list-group-item align-items-center d-flex">
+				<div class="me-auto">At least one number</div>
+				<span id="numberRule"></span></li>
+			<li class="list-group-item align-items-center d-flex">
+				<div class="me-auto">At least one special character</div>
+				<span id="specialCharRule"></span>
+			<li class="list-group-item align-items-center d-flex">
+				<div class="me-auto">No repeated characters</div>
+				<span id="repeatedCharRule"></span>
+			<li class="list-group-item align-items-center d-flex">
+				<div class="me-auto">Passwords must match</div>
+				<span id="confirmRule"></span>
+<!--				
+				<span class="text-success">&#10004;&#xFE0E;</span>
+				<span class="text-danger">&#10006;&#xFE0E;</span>
+-->
+			</li>
+		</ul>
+	</div>
+
+	<br>
+
+	<div>
+		<button class="btn btn-success" disabled="True">Submit</button>
+	</div>
+
+	</div>
+	</div>
+	</div>
+
+	<script src="index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
