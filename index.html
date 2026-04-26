@@ -29,29 +29,31 @@
 		<ul class="list-group small">
 			<li class="list-group-item align-items-center d-flex">
 				<div class="me-auto">At least 8 characters</div>
-				<span id="lengthRule"></span></li>
-			<li class="list-group-item align-items-center d-flex">
-				<div class="me-auto">At least one uppercase letter</div>
-				<span id="uppercaseRule"></span></li>
+				<span id="rule1"></span></li>
 			<li class="list-group-item align-items-center d-flex">
 				<div class="me-auto">At least one lowercase letter</div>
-				<span id="lowercaseRule"></span></li>
+				<span id="rule2"></span></li>
+			<li class="list-group-item align-items-center d-flex">
+				<div class="me-auto">At least one uppercase letter</div>
+				<span id="rule3"></span></li>
 			<li class="list-group-item align-items-center d-flex">
 				<div class="me-auto">At least one number</div>
-				<span id="numberRule"></span></li>
+				<span id="rule4"></span></li>
 			<li class="list-group-item align-items-center d-flex">
 				<div class="me-auto">At least one special character</div>
-				<span id="specialCharRule"></span>
+				<span id="rule5"></span>
+			</li>
 			<li class="list-group-item align-items-center d-flex">
 				<div class="me-auto">No repeated characters</div>
-				<span id="repeatedCharRule"></span>
+				<span id="rule6"></span>
+			</li>
+			<li class="list-group-item align-items-center d-flex">
+				<div class="me-auto">No common passwords</div>
+				<span id="rule7"></span>
+			</li>
 			<li class="list-group-item align-items-center d-flex">
 				<div class="me-auto">Passwords must match</div>
-				<span id="confirmRule"></span>
-<!--				
-				<span class="text-success">&#10004;&#xFE0E;</span>
-				<span class="text-danger">&#10006;&#xFE0E;</span>
--->
+				<span id="rule8"></span>
 			</li>
 		</ul>
 	</div>
@@ -59,7 +61,7 @@
 	<br>
 
 	<div>
-		<button class="btn btn-success" disabled="True">Submit</button>
+		<button id="submitBtn" class="btn btn-success" disabled="True">Submit</button>
 	</div>
 
 	</div>
