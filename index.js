@@ -77,6 +77,7 @@ class PasswordStrengthChecker {
 		password = password.replace('123', ''); // remove spaces
 		password = password.replace('@', 'a'); // common substitutions
 		password = password.replace('3', 'e'); // common substitutions
+		password = password.replace('5', 's'); // common substitutions
 		password = password.replace('0', 'o'); // common substitutions
 		password = password.replaceAll(/[^a-z0-9]/g, ''); // remove special characters
 
